@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Blog (Bootstrap)</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    
+    <!-- Floating Social Sidebar -->
+    <div class="position-fixed top-50 start-0 translate-middle-y ms-2">
+        <a href="#" class="d-block text-white bg-dark p-2 mb-2 rounded text-center" style="width: 40px;"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" class="d-block text-white bg-dark p-2 mb-2 rounded text-center" style="width: 40px;"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="d-block text-white bg-dark p-2 mb-2 rounded text-center" style="width: 40px;"><i class="fab fa-instagram"></i></a>
+        <a href="#" class="d-block text-white bg-dark p-2 rounded text-center" style="width: 40px;"><i class="fab fa-youtube"></i></a>
+    </div>
+    
+    <!-- Image Slider -->
+    <div id="travelSlider" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="image1.jpg" class="d-block w-100" alt="Travel Image 1">
+            </div>
+            <div class="carousel-item">
+                <img src="image2.jpg" class="d-block w-100" alt="Travel Image 2">
+            </div>
+            <div class="carousel-item">
+                <img src="image3.jpg" class="d-block w-100" alt="Travel Image 3">
+            </div>
+            <div class="carousel-item">
+                <img src="image4.jpg" class="d-block w-100" alt="Travel Image 4">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#travelSlider" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#travelSlider" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </div>
+    
+    <!-- Table of Contents -->
+    <div class="container mt-4">
+        <div class="sticky-top bg-white p-3 shadow-sm rounded">
+            <h3>Table of Contents</h3>
+            <ul class="list-unstyled">
+                <li><a href="#post1" class="text-dark">Best Beaches</a></li>
+                <li><a href="#post2" class="text-dark">Mountain Adventures</a></li>
+                <li><a href="#post3" class="text-dark">City Life</a></li>
+            </ul>
+        </div>
+    </div>
+    
+    <!-- Blog Posts -->
+    <div class="container mt-4">
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="beach.jpg" class="card-img-top" alt="Beach">
+                    <div class="card-body">
+                        <h5 class="card-title">Best Beaches</h5>
+                        <p class="card-text">Discover the most breathtaking beaches...</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="mountain.jpg" class="card-img-top" alt="Mountain">
+                    <div class="card-body">
+                        <h5 class="card-title">Mountain Adventures</h5>
+                        <p class="card-text">Explore thrilling hikes and landscapes...</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="city.jpg" class="card-img-top" alt="City">
+                    <div class="card-body">
+                        <h5 class="card-title">City Life</h5>
+                        <p class="card-text">Experience the vibrant city culture...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Quote Section -->
+    <div class="container text-center my-5">
+        <blockquote class="blockquote">
+            <p class="fs-4">"Traveling – it leaves you speechless, then turns you into a storyteller."</p>
+            <footer class="blockquote-footer">Ibn Battuta</footer>
+        </blockquote>
+    </div>
+    
+    <!-- Footer with Newsletter Signup -->
+    <footer class="bg-dark text-white text-center p-4">
+        <h2>Subscribe to Our Travel Newsletter</h2>
+        <form class="d-flex justify-content-center">
+            <input type="email" class="form-control w-25 me-2" placeholder="Enter your email" required>
+            <button type="submit" class="btn btn-danger">Subscribe</button>
+        </form>
+    </footer>
+    
+</body>
+</html>
